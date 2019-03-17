@@ -1,0 +1,34 @@
+@import url("variables.css");
+@import url("layouts.css");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px/1.5/"PT Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    color: var(--main-color);
+}
+
+button {
+    color: var(--background-color);
+    background: var(--alternative-color);
+}
+
+button:hover,
+button:focus {
+    color: var(--alternative-color);
+    background: var(--main-color);
+}

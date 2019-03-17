@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Hind+Vadodara");
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.5/'Hind Vadodara', sans-serif;
+}
+
+:root {
+    --fs-phones: 14px;
+    --fs-tablets: 16px;
+    --fs-laptops: 18px;
+}
+
+p {
+    padding-bottom: 1.5rem
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+    margin: 0, 0, 0.5em 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.2em
+}
+
+h3 {
+    font-size: 1.9em
+}
+
+h4 {
+    font-size: 1.6em
+}
+
+h5 {
+    font-size: 1.4em
+}
+
+h6 {
+    font-size: 1.2em
+}
+
+.ampersand {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+}
+
+body>article:nth-child(10)>ul>li:nth-child(1) {
+    list-style-type: circle;
+}
+
+body>article:nth-child(10)>ul>li:nth-child(2) {
+    list-style-type: square;
+}
+
+body>article:nth-child(10)>ul>li:nth-child(2)>ul>li:nth-child(2)>ul>li {
+    list-style-type: disc;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+    background-color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(220, 220, 220);
+}
+
+body>article:nth-child(10)>table>thead>tr {
+    font-style: bold;
+    background-color: rgb(160, 160, 160);
+}
+
+blockquote {
+    font: italic;
+    border-left: 4px solid rgb(221, 221, 221);
+    margin: 1.5em 20px;
+    padding: 0.5em 30px;
+}
+
+body>article:nth-child(10)>blockquote>p:nth-child(3) {
+    text-align: right;
+}
+
+@media only screen and(min-width:500px) {
+    html {
+        font-size: var(--fs-phones);
+    }
+}
+
+@media (min-width:700px) {
+    html {
+        font-size: var(--fs-tablets);
+    }
+}
+
+@media (min-width:1600px) {
+    html {
+        font-size: var(--fs-laptops)
+    }
+}

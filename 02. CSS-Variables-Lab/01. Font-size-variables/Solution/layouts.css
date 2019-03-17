@@ -1,0 +1,29 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3,
+h1,
+p {
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: var(--fs-h1)
+}
+
+h3 {
+    font-size: var(--fs-h3);
+    font-style: italic;
+}
+
+p {
+    font-size: var(--fs-p)
+}
