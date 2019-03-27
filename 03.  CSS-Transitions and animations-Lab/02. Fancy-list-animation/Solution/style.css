@@ -29,14 +29,14 @@
             
             ul li:nth-child(1) {
                 opacity: 0;
-                animation-name: list-animation;
+                animation-name: fadeInLeft;
                 animation-duration: 1s;
                 animation-fill-mode: forwards;
             }
             
             ul li:nth-child(2) {
                 opacity: 0;
-                animation-name: list-animation;
+                animation-name: fadeInLeft;
                 animation-duration: 1s;
                 animation-delay: 0.3s;
                 animation-fill-mode: forwards;
@@ -44,7 +44,7 @@
             
             ul li:nth-child(3) {
                 opacity: 0;
-                animation-name: list-animation;
+                animation-name: fadeInLeft;
                 animation-duration: 1s;
                 animation-delay: 0.6s;
                 animation-fill-mode: forwards;
@@ -52,7 +52,7 @@
             
             ul li:nth-child(4) {
                 opacity: 0;
-                animation-name: list-animation;
+                animation-name: fadeInLeft;
                 animation-duration: 1s;
                 animation-delay: 0.9s;
                 animation-fill-mode: forwards;
@@ -60,7 +60,7 @@
             
             ul li:nth-child(5) {
                 opacity: 0;
-                animation-name: list-animation;
+                animation-name: fadeInLeft;
                 animation-duration: 1s;
                 animation-delay: 1.2s;
                 animation-fill-mode: forwards;
@@ -68,7 +68,7 @@
             
             ul li:nth-child(6) {
                 opacity: 0;
-                animation-name: list-animation;
+                animation-name: fadeInLeft;
                 animation-duration: 1s;
                 animation-delay: 1.5s;
                 animation-fill-mode: forwards;
@@ -76,13 +76,12 @@
             
             ul li:nth-child(7) {
                 opacity: 0;
-                animation-name: list-animation;
+                animation-name: fadeInLeft;
                 animation-duration: 1s;
                 animation-delay: 1.8s;
                 animation-fill-mode: forwards;
             }
-            
-            @keyframes list-animation {
+            /* @keyframes list-animation {
                 0% {
                     left: -25em;
                     opacity: 0;
@@ -91,4 +90,35 @@
                     left: 0;
                     opacity: 1;
                 }
+            } */
+            
+            @-webkit-keyframes fadeInLeft {
+                from {
+                    opacity: 0;
+                    -webkit-transform: translate3d(-100%, 0, 0);
+                    transform: translate3d(-100%, 0, 0);
+                }
+                to {
+                    opacity: 1;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+            
+            @keyframes fadeInLeft {
+                from {
+                    opacity: 0;
+                    -webkit-transform: translate3d(-100%, 0, 0);
+                    transform: translate3d(-100%, 0, 0);
+                }
+                to {
+                    opacity: 1;
+                    -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+            
+            .fadeInLeft {
+                -webkit-animation-name: fadeInLeft;
+                animation-name: fadeInLeft;
             }
